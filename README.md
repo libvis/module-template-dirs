@@ -13,7 +13,6 @@ To install the module, use `libvis-mods` in the module directory.
 
 ```
 libvis-mods install
-``
-`
+```
 
 
