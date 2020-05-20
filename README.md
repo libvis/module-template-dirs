@@ -1,3 +1,7 @@
+<div align="center">
+    <img width="212px" alt="libvis logo" src="http://libvis.dev/libvis-sm.png"/>
+</div>
+
 This is a template for a libvis module
 
 # Quickstart
