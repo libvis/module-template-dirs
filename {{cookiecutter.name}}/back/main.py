@@ -16,3 +16,7 @@ class {{cookiecutter.name}}(BaseModule):
     def vis_set(self, key, value):
         super().vis_set(key, value) # same as self[key] = value
         print('updated value form front: ', key, value)
+
+    @classmethod
+    def test_object(cls):
+        return cls()
