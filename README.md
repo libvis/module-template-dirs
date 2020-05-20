@@ -13,6 +13,14 @@ cookiecutter gh:libvis/module-template-dirs
 
 Answer the questions, and the tool will generate a new directory with name of the package.
 
+To start development, run
+
+```
+libvis-mods develop
+```
+It will start a server and open the app in browser. 
+The server will watch both front and back files and recompile/update object when files are written. 
+
 To install the module, use `libvis-mods` in the module directory.
 
 ```
