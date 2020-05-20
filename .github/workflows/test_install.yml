@@ -31,5 +31,6 @@ jobs:
 
     - name: Install the module
       run: |
-        cookiecutter .
+        cookiecutter --no-input .
+        cd helloworld
         libvis-mods install .
