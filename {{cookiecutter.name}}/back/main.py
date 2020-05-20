@@ -9,7 +9,8 @@ class {{cookiecutter.name}}(BaseModule):
         self.quote = random_quote()
 
     def vis_get(self, key):
-        value = super().vis_get(key) # makes {value:preprocess(value), type:self.name}
+        #value = super().vis_get(key) # makes {value:preprocess(value), type:self.name}
+        value = self[key]
         print('sending value to front: ', key, value)
         return value
 
