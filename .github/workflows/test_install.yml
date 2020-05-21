@@ -34,3 +34,7 @@ jobs:
         cookiecutter --no-input .
         cd helloworld
         libvis-mods install
+        
+    - name: Smoke test
+      run: |
+        python -c 'from libvis.modules import helloworld; helloworld()'
