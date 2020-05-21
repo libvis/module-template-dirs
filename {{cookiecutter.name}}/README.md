@@ -7,7 +7,11 @@ This is a {{cookiecutter.name}} [libvis](http://libvis.dev) module.
 
 # Installation
 
-```libvis-mods install gh:libvis/{{cookiecutter.name}}```
+```
+libvis-mods download gh:libvis/{{cookiecutter.name}}
+cd {{cookiecutter.name}}
+libvis-mods install
+```
 
 # Usage 
 
