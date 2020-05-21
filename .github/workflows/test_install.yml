@@ -33,4 +33,4 @@ jobs:
       run: |
         cookiecutter --no-input .
         cd helloworld
-        libvis-mods install .
+        libvis-mods install
