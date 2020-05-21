@@ -2,7 +2,7 @@
     <img width="212px" alt="libvis logo" src="http://libvis.dev/libvis-sm.png"/>
 </div>
 
-![](https://github.com/libvis/module-template-dirs/workflows/.github/workflows/test_install.yml/badge.svg)
+![](https://github.com/libvis/module-template-dirs/workflows/Test%20module/badge.svg)
 
 This is a template for a libvis module
 
