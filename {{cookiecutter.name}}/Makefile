@@ -1,19 +1,18 @@
 modname = {{cookiecutter.name}}
-get_path = libvis-mods where
-front_src = $(shell $(get_path) --front)
-back_src = $(shell $(get_path) --back)
+front_src = $(shell libvis-mods where --front)
+back_src = $(shell libvis-mods where --back)
 
 install:
 	libvis_mods install
 
 requirements: req_py req_js
-	@echo "Installed requirements"
+	@echo "[libvis-mods] :I: Installed requirements"
 
 req_py:
 	pip3 install -r py_requirements.txt --user
 
 req_js:
 	cd $(front_src)/$(modname) &&\
-		cat js_requirements.txt | xargs yarn add
-
-
+		[ -s js_requirements.txt ] && \
+		{cat js_requirements.txt | xargs yarn add} || \
+		echo "[libvis-mods] :W: empty js requirements"
