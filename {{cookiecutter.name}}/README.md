@@ -3,17 +3,16 @@
     <img width="312px" alt="libvis logo" src="http://libvis.dev/libvis-sm.png"/>
 </div>
 
-This is a {{cookiecutter.name}} [libvis](http://libvis.dev) module
+This is a {{cookiecutter.name}} [libvis](http://libvis.dev) module.
 
 
 # Installation
 
 ```
 libvis-mods download gh:libvis/{{cookiecutter.name}}
-cd data_access_wrapper
+cd {{cookiecutter.name}}
 libvis-mods install
 ```
-
 
 # Usage
 
@@ -23,9 +22,11 @@ from libvis import Vis
 
 vis = Vis()
 
-vis.vars.test = data_access_wrapper.test_object()
+vis.vars.test = {{cookiecutter.name}}.test_object()
 
 ```
+
+The state of `vis.vars.test` will be visualised live at `localhost:7000/`. 
 
 
 # Documentation
