@@ -12,4 +12,6 @@ req_py:
 	pip3 install -r py_requirements.txt --user
 
 req_js:
-	cat js_requirements.txt | xargs npm i --prefix $(front_src)/$(modname)
+	[ -s js_requirements.txt ] && \
+	{cat js_requirements.txt | xargs yarn add} || \
+	echo "[libvis-mods] :W: empty js requirements"
